@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+
+{% block title %}mvc{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-1">
+            <h1 class="title">MVC</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <img src="{{ asset("img/code.jpg") }}" alt="Bild på mig">
+        </div>
+        <div class="col-2">
+            <a href="https://github.com/dbwebb-se/mvc">mvc github</a>
+            <p>
+                MVC är en kurs som fokuserar på ramverket symfony. Kursen använder sig
+                utav controllers och twig templates. Kursen innehåller mycket objektorienterad
+                php och har ett stort fokus på att skriva snygg och lättläst kod. Den ska också
+                använda sig utav object relational mapping (ORM) för att utföra databaskopplingar.
+            </p>
+        </div>
+    </div>
+{% endblock %}

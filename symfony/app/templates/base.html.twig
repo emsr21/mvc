@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset("css/style.css") }}"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navRow">
+                <a class="navBTN" href="{{ path("index") }}">
+                    <p class="navText" >Home</p>
+                </a>
+                <a class="navBTN" href="{{ path("about") }}">
+                    <p class="navText" >Om kursen</p>
+                </a>
+                <a class="navBTN" href="{{ path("report") }}">
+                    <p class="navText" >Redovisningar</p>
+                </a>
+            </div>
+
+            {% block content %}
+            Defoult content
+            {% endblock %}
+
+            <div class="footer">
+                
+            </div>
+        </div>
+    </body>
+</html>
