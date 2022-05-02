@@ -3,18 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="stylesheet" href="{{ asset("css/style.css") }}"/>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
     </head>
     <body>
         <div class="container">
             <div class="navRow">
-                <a class="navBTN" href="{{ path("index") }}">
+                <a class="navBTN" href="{{ path('index') }}">
                     <p class="navText" >Home</p>
                 </a>
-                <a class="navBTN" href="{{ path("about") }}">
+                <a class="navBTN" href="{{ path('about') }}">
                     <p class="navText" >Om kursen</p>
                 </a>
-                <a class="navBTN" href="{{ path("report") }}">
+                <a class="navBTN" href="{{ path('report') }}">
                     <p class="navText" >Redovisningar</p>
                 </a>
             </div>
